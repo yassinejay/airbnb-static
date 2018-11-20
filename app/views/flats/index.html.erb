@@ -1,0 +1,13 @@
+<h1>Flats</h1>
+
+<p>Find me in app/views/flats/index.html.erb</p>
+
+<% @flats.each do |flat| %>
+ <%= link_to flat_path(flat['id']) do %>
+<div>
+  <h2><%= flat['name'] %></h2>
+  <img src="<%= flat['imageUrl'] %>" alt="" width ="300">
+  <% end %>
+  <% end %>
+</div>
+<%= @flats %>

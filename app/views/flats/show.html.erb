@@ -1,0 +1,12 @@
+<h1>Flats#show</h1>
+<div class="flat-container">
+  <div class="flat">
+    <h1><%= @flat['name'] %></h1>
+    <p class="pricing">for <strong>only</strong> <%= @flat['price'] %>€ per night</p>
+    <a href="#" class="booking-link">BOOK NOW</a>
+  </div>
+  <div>
+    <%= image_tag @flat['imageUrl'], width: 500 %>
+  </div>
+</div>
+<p>Find me in app/views/flats/show.html.erb</p>
